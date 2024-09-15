@@ -29,3 +29,18 @@ class Node {
         
 
     }
+     void postOrder(Node *root) {
+        if (root == NULL) return;
+        postOrder(root->left);
+        postOrder(root->right);
+        cout << root->data << " ";
+
+    }
+
+    void inOrder(Node *root) {
+        if (root == NULL) return;
+        inOrder(root->left);
+        cout << root->data << " ";
+        inOrder(root->right);
+
+    }
