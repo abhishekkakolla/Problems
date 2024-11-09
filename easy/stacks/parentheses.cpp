@@ -54,7 +54,7 @@ public:
 
             
         }
-        cout << stack_length << closings << endl;
+        // cout << stack_length << closings << endl;
         if (openings != closings) return false;
         return true;
 
